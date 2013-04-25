@@ -1,0 +1,53 @@
+doctype html
+html prefix="og: http://ogp.me/ns#"
+  head
+    title Ruby Daily
+
+    meta name="description" content="Everyday news from (and about) ruby community and development"
+    meta name="author" content="Nick Kugaevsky"
+    meta charset="UTF-8"
+    meta name="robots" content="all"
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+
+    / %link{ href: "/favicon.ico", rel: "icon", type: "image/ico" }/
+    link href="/vendor/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"
+    link href="/styles.css" rel="stylesheet" type="text/css"
+
+    script src="/vendor/javascripts/custom.modernizr.js"
+    == NewRelic::Agent.browser_timing_header
+
+    javascript:
+      WebFontConfig = {
+            google: { families: [ 'Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800,600:latin', 'Open+Sans+Condensed:300,700,300italic:latin' ] }
+
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+
+  body
+
+    == slim :_header
+    .row.collapsed
+      .small-12.columns
+        == yield
+    == slim :_footer
+
+    script src="/vendor/javascripts/jquery-2.0.0.min.js"
+    script src="/vendor/javascripts/foundation.min.js"
+    script src="/scripts.js"
+
+    / Google Analytics
+
+    / Yandex.Metrika counter
+
+    / New Relic
+    == NewRelic::Agent.browser_timing_footer
+
+
