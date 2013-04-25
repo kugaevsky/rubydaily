@@ -27,5 +27,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sass'
   spec.add_dependency 'coffee-script'
   spec.add_dependency 'capistrano'
+  spec.add_dependency 'rvm-capistrano'
   spec.add_dependency 'newrelic_rpm'
 end
