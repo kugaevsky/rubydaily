@@ -19,7 +19,7 @@ $head-foot-border: 1px solid lighten($topbar-link-color, 30%)
     padding: .65em .5em .5em
     border: 2px solid lighten($fill-color, 25%)
     i
-      @include single-transition()
+      @include single-transition
       @include transformation(rotateY(0deg) scale(.8))
       font-size: 150%
     &:hover
@@ -31,10 +31,10 @@ $head-foot-border: 1px solid lighten($topbar-link-color, 30%)
         text-shadow: 1px 1px 0 darken($fill-color, 30%)
 
 a
-  @include single-transition()
-  color: #D35400
+  @include single-transition
+  color: $primary-color
   &:hover
-    color: $primary-color
+    color: $carrot
 
 header
   border-bottom: $head-foot-border
@@ -55,7 +55,7 @@ footer
   @include grid-column(6)
 
 .social-links
-  @include social-links()
+  @include social-links
 
 body
   padding-top: $topbar-height*1.1
@@ -77,7 +77,7 @@ body
   font-weight: 800
   & > *
     display: inline-block
-    @include single-transition()
+    @include single-transition
   i
     font-weight: 300
   &:hover
@@ -90,12 +90,11 @@ body
   color: $primary-color
 
 .paper-image, .stream-feed
-  @include single-transition()
+  @include single-transition
   display: block
   border: 1px solid $clouds
   height: 375px
   overflow: hidden
-  box-shadow: 0 -2px 5px #fff inset
   &:hover
     box-shadow: 0 0 20px $silver
 
