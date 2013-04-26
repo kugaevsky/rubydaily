@@ -16,6 +16,7 @@ test/tmp
 test/version_tmp
 tmp
 .sass-cache/
-config/
+config/*.rb
+config/*.yml
 .ruby-version
 .ruby-gemset
