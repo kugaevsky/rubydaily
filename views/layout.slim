@@ -1,5 +1,5 @@
 doctype html
-html prefix="og: http://ogp.me/ns#"
+html prefix="og: http://ogp.me/ns#" lang="en"
   head
     title Ruby Daily
 
@@ -9,13 +9,17 @@ html prefix="og: http://ogp.me/ns#"
     meta name="robots" content="all"
     meta content="width=device-width, initial-scale=1.0" name="viewport"
 
-    link href="/vendor/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"
-    link href="/styles.css" rel="stylesheet" type="text/css"
+    / Meta
+    == slim :"tumblr/meta" if params[:tumblr]
 
-    link rel="shortcut icon" href="/images/rubydaily_ico.png"
+
+    link href="//rubydaily.org/vendor/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"
+    link href="//rubydaily.org/styles.css" rel="stylesheet" type="text/css"
+
+    link rel="shortcut icon" href="//rubydaily.org/images/rubydaily_ico.png"
     link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.rubydaily.org/RubyDaily"
 
-    script src="/vendor/javascripts/custom.modernizr.js"
+    script src="//static.rubydaily.org/assets/javascripts/custom.modernizr.js"
     == NewRelic::Agent.browser_timing_header
 
     javascript:
@@ -41,9 +45,9 @@ html prefix="og: http://ogp.me/ns#"
         == yield
     == slim :_footer
 
-    script src="/vendor/javascripts/jquery-2.0.0.min.js"
-    script src="/vendor/javascripts/foundation.min.js"
-    script src="/scripts.js"
+    script src="//static.rubydaily.org/assets/javascripts/jquery-2.0.0.min.js"
+    script src="//static.rubydaily.org/assets/javascripts/foundation.min.js"
+    script src="//rubydaily.org/scripts.js"
 
     / Google Analytics
     javascript:
