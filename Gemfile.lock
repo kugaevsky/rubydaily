@@ -18,7 +18,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    capistrano (2.15.3)
+    capistrano (2.15.4)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -45,10 +45,10 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    newrelic_rpm (3.6.1.87)
+    newrelic_rpm (3.6.1.88)
     oauth (0.4.7)
-    puma (1.6.3)
-      rack (~> 1.2)
+    puma (2.0.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack

@@ -30,6 +30,18 @@ $head-foot-border: 1px solid lighten($topbar-link-color, 30%)
         @include transformation(rotateY(360deg) scale(1))
         text-shadow: 1px 1px 0 darken($fill-color, 30%)
 
+@mixin fancy-image()
+  @include single-transition
+  display: block
+  border: 1px solid $clouds
+  overflow: hidden
+  max-height: 500px
+
+@mixin fancy-image-hovered
+  box-shadow: 0 0 20px $silver
+  max-height: none
+
+
 a
   @include single-transition
   color: $primary-color
@@ -90,13 +102,10 @@ body
   color: $primary-color
 
 .paper-image, .stream-feed
-  @include single-transition
-  display: block
-  border: 1px solid $clouds
+  @include fancy-image
   height: 375px
-  overflow: hidden
   &:hover
-    box-shadow: 0 0 20px $silver
+    @include fancy-image-hovered
 
 .stream-feed
   .timeline
@@ -114,3 +123,15 @@ body
 
 .clr
   @include clearfix
+
+#posts-block
+  & > section
+    margin-bottom: 3em
+    ul
+      margin-left: 2em
+    &.photo
+      .image-holder
+        @include fancy-image
+        &:hover
+          @include fancy-image-hovered
+

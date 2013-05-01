@@ -3,15 +3,12 @@ html prefix="og: http://ogp.me/ns#" lang="en"
   head
     title Ruby Daily
 
+    meta charset="UTF-8"
+
     meta name="description" content="Everyday news from (and about) ruby community and development"
     meta name="author" content="Nick Kugaevsky"
-    meta charset="UTF-8"
     meta name="robots" content="all"
-    meta content="width=device-width, initial-scale=1.0" name="viewport"
-
-    / Meta
-    == slim :"tumblr/meta" if params[:tumblr]
-
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
 
     link href="//rubydaily.org/vendor/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"
     link href="//rubydaily.org/styles.css" rel="stylesheet" type="text/css"
@@ -65,7 +62,8 @@ html prefix="og: http://ogp.me/ns#" lang="en"
     / Yandex.Metrika counter
     javascript:
       (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20960203 = new Ya.Metrika({id:20960203, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
-    noscript: div: img src="//mc.yandex.ru/watch/20960203" style="position:absolute; left:-9999px;" alt=""
+    noscript
+      div: img src="//mc.yandex.ru/watch/20960203" style="position:absolute; left:-9999px;" alt=""
 
     / New Relic
     == NewRelic::Agent.browser_timing_footer
