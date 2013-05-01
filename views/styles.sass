@@ -125,7 +125,11 @@ body
 
 #posts-block
   & > section
-    margin-bottom: 3em
+    border: 1px solid $clouds
+    & > header,
+    & > article,
+    & > footer
+      padding: .5em 1em
     article
       ul,
       ol
@@ -133,6 +137,8 @@ body
     footer
       @include single-transition
       color: $concrete
+      background: $clouds
+      text-shadow: 1px 1px 0 white
       opacity: .5
       font-size: 80%
     &:hover
