@@ -125,9 +125,19 @@ body
 
 #posts-block
   & > section
+    @include single-transition
     margin-bottom: 3em
-    ul
-      margin-left: 2em
+    article
+      ul,
+      ol
+        margin-left: 2em
+    footer
+      opacity: .5
+      font-size: 80%
+    &:hover
+      footer
+        opacity: 1
+
     &.photo
       .image-holder
         @include fancy-image
