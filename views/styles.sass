@@ -125,15 +125,18 @@ body
 
 #posts-block
   & > section
-    @include single-transition
     margin-bottom: 3em
     article
       ul,
       ol
         margin-left: 2em
     footer
+      @include single-transition
+      color: $silver
       opacity: .5
       font-size: 80%
+      ul li
+        white-space: nowrap
     &:hover
       footer
         opacity: 1
