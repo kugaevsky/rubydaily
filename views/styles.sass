@@ -124,13 +124,11 @@ body
   @include clearfix
 
 #posts-block
+  margin-bottom: 1em
   &.index > section
     border: 1px solid $clouds
     &:hover
       border-color: $silver
-    footer
-      ul
-        margin: 0
   & > section
     @include single-transition
     & > header,
@@ -150,6 +148,9 @@ body
       text-shadow: 1px 1px 0 white
       opacity: .5
       font-size: 80%
+      padding-left: 0
+      ul
+        margin: 0
     &:hover
       footer
         opacity: 1
