@@ -11,12 +11,14 @@ $head-foot-border: 1px solid lighten($topbar-link-color, 30%)
 
 @mixin social-links($font-color:white, $fill-color:$topbar-link-color)
   @include inline-list
-  margin-bottom: 0
+  margin: 0
+  overflow: visible
+  line-height: 1
   a
     background: lighten($fill-color, 25%)
     color: $font-color
     border-radius: 50%
-    padding: .65em .5em .5em
+    padding: .5em
     border: 2px solid lighten($fill-color, 25%)
     i
       @include single-transition
@@ -65,9 +67,6 @@ a
 .half
   @include grid-column(6)
 
-.social-links
-  @include social-links
-
 body
   padding-top: $topbar-height*1.25
 
@@ -115,10 +114,9 @@ body
   h2.subheader
     color: white
     margin: -.1em 0 0
-  .social-links
-    @include social-links($pomegranate, $orange)
-    li
-      margin-left: 1em
+
+.social-links
+  @include social-links($pomegranate, $orange)
 
 .clr
   @include clearfix
