@@ -193,7 +193,7 @@ $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !defa
     width: 100%;
     height: auto;
     display: block;
-    background: $topbar-dropdown-bg;
+    background: white;
     font-size: $em-base;
     margin: 0;
   }
@@ -340,7 +340,7 @@ $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !defa
       height: 2em;
       padding: 0 10px;
       position: relative;
-      top: 8px;
+      top: 1.15em;
     }
 
     &.expanded { background: $topbar-bg; }

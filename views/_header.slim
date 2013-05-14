@@ -13,9 +13,14 @@ header#header.contain-to-grid.fixed
     section.top-bar-section
       / Left Nav Section
       ul.left
-        li: a href="http://paper.rubydaily.org" PAPER
-        li: a href="http://stream.rubydaily.org" STREAM
+        li: a href="//paper.rubydaily.org" PAPER
+        li: a href="//stream.rubydaily.org" STREAM
       ul.right
-        li: a.submit href="http://stream.rubydaily.org/submit"
+        li: form#search method="GET" action="//stream.rubydaily.org/search"
+          .row.collapse
+            .small-11.columns
+              input#q type="search" name="q" placeholder="Search..."
+            .small-1.column
+        li: a.submit href="//stream.rubydaily.org/submit"
           i.icon-pencil
           | SUBMIT

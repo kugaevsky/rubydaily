@@ -1041,7 +1041,7 @@ $topbar-link-font-size: emCalc(18px);
 $topbar-link-hover-lightness: 0% !default; // Darken by 30%
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #ECF0F1;
+$topbar-dropdown-bg: $clouds;
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
