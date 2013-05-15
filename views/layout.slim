@@ -38,8 +38,14 @@ html prefix="og: http://ogp.me/ns#" lang="en"
 
     == slim :_header
     .row.collapsed
-      .small-12.columns
+      .small-12.large-10.columns
         == yield
+      .small-12.large-2.columns
+        #carbonads-container
+          .carbonad
+            #azcarbon
+            javascript:
+                var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/33387/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);
     == slim :_footer
 
     script src="//static.rubydaily.org/assets/javascripts/jquery-2.0.0.min.js"
