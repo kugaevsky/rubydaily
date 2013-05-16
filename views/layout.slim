@@ -46,6 +46,19 @@ html prefix="og: http://ogp.me/ns#" lang="en"
             #azcarbon
             javascript:
                 var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/33387/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);
+
+        ul.inline-list.donate
+          li
+            form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:0;"
+              input type="hidden" name="cmd" value="_s-xclick"
+              input type="hidden" name="hosted_button_id" value="XGAAN68TXJFBQ"
+              input type="image" src="http://www.aaja.org/wp-content/uploads/2013/03/Paypal-Donate-300x136.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" width="112px"
+              img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"
+          li
+            script data-gittip-username="kugaevsky" src="https://www.gittip.com/assets/widgets/0002.js"
+          li
+            a class="FlattrButton" style="display:none;" href="http://rubydaily.org"
+
     == slim :_footer
 
     script src="//static.rubydaily.org/assets/javascripts/jquery-2.0.0.min.js"
@@ -70,6 +83,16 @@ html prefix="og: http://ogp.me/ns#" lang="en"
       (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20960203 = new Ya.Metrika({id:20960203, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
     noscript
       div: img src="//mc.yandex.ru/watch/20960203" style="position:absolute; left:-9999px;" alt=""
+
+    / Flattr
+    javascript:
+      (function() {
+          var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+          t.parentNode.insertBefore(s, t);
+      })();
 
     / New Relic
     == NewRelic::Agent.browser_timing_footer
