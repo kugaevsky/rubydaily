@@ -51,6 +51,10 @@ module Rubydaily
       slim :about
     end
 
+    get '/sitemap.xml' do
+     redirect "http://stream.rubydaily.org/sitemap1.xml"
+    end
+
     # @method get_coffee
     # Render coffeescripts
     get "/scripts.js" do

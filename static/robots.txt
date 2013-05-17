@@ -1,2 +1,4 @@
 User-Agent: *
 Allow: /
+
+sitemap: http://stream.rubydaily.org/sitemap1.xml
