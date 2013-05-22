@@ -66,7 +66,16 @@
 
   h3 Cool! Do you need sponsorship?
   p
-    'I'm running Ruby Daily by my own now. You can support Ruby Daily with any kind of donation if you want to via links on the right side of the page. All funds raised will cover my spends on Ruby Daily.
+    'I'm running Ruby Daily by my own now. You can support Ruby Daily with any kind of donation if you want to via links below. All funds raised will cover my spends on Ruby Daily.
+
+  ul.inline-list.donate
+    li: form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin:0;" target="_top"
+      input name="cmd" type="hidden" value="_s-xclick"
+      input name="hosted_button_id" type="hidden" value="XGAAN68TXJFBQ"
+      input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="http://www.aaja.org/wp-content/uploads/2013/03/Paypal-Donate-300x136.png" type="image" width="112px"
+      img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+    li: script data-gittip-username="kugaevsky" src="https://www.gittip.com/assets/widgets/0002.js"
+    li: a class="FlattrButton" style="display:none;" href="http://rubydaily.org"
   p
     'If you represent a company and want to support Ruby Daily on long term basis feel free to
     a href="mailto: nick@kugaevsky.ru"
