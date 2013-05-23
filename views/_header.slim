@@ -15,7 +15,8 @@ header#header.contain-to-grid.fixed
       ul.left
         li: a href="//paper.rubydaily.org" PAPER
         li: a href="//stream.rubydaily.org" STREAM
-        li: a href="/about" ABOUT
+        li class=("active" if request.path == '/about')
+          a href="/about" ABOUT
       ul.right
         li: form#search method="GET" action="//stream.rubydaily.org/search"
           .row.collapse
