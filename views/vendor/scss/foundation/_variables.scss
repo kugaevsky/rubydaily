@@ -48,7 +48,7 @@ $em-base: 16px !default;
 
 // We use these to control various global styles
 $body-bg: $clouds;
-$body-font-color: #2C3E50
+$body-font-color: #2C3E50;
 $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -191,7 +191,7 @@ $small-font-color: $silver;
 // $definition-list-margin-bottom: emCalc(12px);
 
 // We use these to style blockquotes
-// $blockquote-font-color: lighten($header-font-color, 30%);
+$blockquote-font-color: lighten($body-font-color, 10%);
 // $blockquote-padding: emCalc(9px) emCalc(20px) 0 emCalc(19px);
 // $blockquote-border: 1px solid #ddd;
 // $blockquote-cite-font-size: emCalc(13px);
