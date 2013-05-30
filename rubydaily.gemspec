@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rvm-capistrano'
   spec.add_dependency 'newrelic_rpm'
   spec.add_dependency 'tumblr_client'
+  spec.add_dependency 'skylight'
 end
