@@ -188,10 +188,11 @@ body
     &:hover
       footer
         opacity: 1
-    &.photo
-      .image-holder
-        @include fancy-image
-        &:hover
+    .image-holder,
+    .video-holder
+      @include fancy-image
+      margin-bottom: 1em
+      &:hover
           @include fancy-image-hovered
 
 
