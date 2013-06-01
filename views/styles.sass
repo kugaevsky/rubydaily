@@ -168,6 +168,8 @@ body
       padding: .3em 1.2em
     header
       padding-top: 1em
+      & > i
+        color: $concrete
     article
       ul,
       ol
@@ -191,7 +193,7 @@ body
     .image-holder,
     .video-holder
       @include fancy-image
-      margin-bottom: 1em
+      margin: 1em 0
       &:hover
         @include fancy-image-hovered
 
