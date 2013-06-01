@@ -38,17 +38,10 @@ html prefix="og: http://ogp.me/ns#" lang="en"
 
     == slim :_header
     .row.collapsed
-      .small-12.large-10.columns
+      .small-12.large-9.columns
         == yield
-      .small-12.large-2.columns
-        #carbonads-container
-          .carbonad
-            #azcarbon
-            javascript:
-                var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/33387/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);
-        .hosting-block
-          a href="http://bit.ly/RubyDailyHosting" title="Hosted by Digital Ocean"
-            img src="https://www.digitalocean.com/assets/badges/digitalocean-ssd-badge-160x160.png" alt="Hosted by Digital Ocean"
+      .small-12.large-3.columns
+        == slim :_sidebar
 
     == slim :_footer
 
