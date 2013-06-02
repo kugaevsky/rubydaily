@@ -155,12 +155,13 @@ body
   margin-bottom: 1em
   &.index > section
     border: 1px solid $clouds
-    background: white
-    margin-bottom: 1em
     border-bottom: 1px solid $silver
     &:hover
       border-color: $concrete
   & > section
+    border-color: $concrete
+    background: white
+    margin-bottom: 1em
     @include single-transition
     & > header,
     & > article,
@@ -196,6 +197,9 @@ body
       margin: 1em 0
       &:hover
         @include fancy-image-hovered
+
+.original-post
+  margin-bottom: 1em
 
 #notes
   padding: .3em 1.2em
