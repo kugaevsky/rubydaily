@@ -14,16 +14,23 @@ $head-foot-border: 1px solid darken($clouds, 10%)
   margin: 0
   overflow: visible
   line-height: 1
+  li
+    margin-left: 0
+    margin-right: 1em
+    margin-bottom: 1em
   a
     background: lighten($fill-color, 25%)
     color: $font-color
     border-radius: 50%
     padding: .5em
     border: 2px solid lighten($fill-color, 25%)
+    min-width: 45px
+    text-align: center
     i
       @include single-transition
       @include transformation(rotateY(0deg) scale(.8))
       font-size: 150%
+      display: inline-block
     &:hover
       background: $font-color
       color: $fill-color
@@ -41,7 +48,6 @@ $head-foot-border: 1px solid darken($clouds, 10%)
 
 @mixin fancy-image-hovered
   box-shadow: 0 0 20px $silver
-
 
 a
   @include single-transition
