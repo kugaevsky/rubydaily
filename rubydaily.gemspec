@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rake"
   spec.add_dependency 'thor'
   spec.add_dependency 'slim'
-  spec.add_dependency 'sinatra'
+  spec.add_dependency 'sinatra', "~> 1.4"
   spec.add_dependency 'puma'
   spec.add_dependency 'sass'
   spec.add_dependency 'coffee-script'
