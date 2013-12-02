@@ -8,6 +8,7 @@ $head-foot-border: 1px solid darken($clouds, 10%)
   -ms-transform: $trans
   -o-transform: $trans
   transform: $trans
+  -webkit-backface-visibility: hidden
 
 @mixin social-links($font-color:white, $fill-color:$topbar-link-color)
   @include inline-list
@@ -45,12 +46,14 @@ $head-foot-border: 1px solid darken($clouds, 10%)
   border: 1px solid $clouds
   overflow: hidden
   max-height: 500px
+  -webkit-backface-visibility: hidden
 
 @mixin fancy-image-hovered
   box-shadow: 0 0 20px $silver
 
 a
   @include single-transition
+  -webkit-backface-visibility: hidden
   color: $primary-color
   &:hover
     color: $carrot
@@ -97,6 +100,7 @@ body
   & > *
     display: inline-block
     @include single-transition
+    -webkit-backface-visibility: hidden
   i
     font-weight: 300
   &:hover
