@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'puma'
   spec.add_dependency 'sass'
   spec.add_dependency 'coffee-script'
-  spec.add_dependency 'capistrano'
+  spec.add_dependency 'capistrano', "~> 2.15"
   spec.add_dependency 'rvm-capistrano'
   spec.add_dependency 'newrelic_rpm'
   spec.add_dependency 'tumblr_client'
